@@ -76,6 +76,10 @@ void processUserOption(int userOption){
         };
 }
 int main (){
+
+    double price = 5319.450228;
+    double amount = 0.00020075;
+    
     while(true){
 
         printMenu();
