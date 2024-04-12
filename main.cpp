@@ -81,7 +81,10 @@ int main (){
     double price = 0.48;
     double amount = 0.03123456;
     string timestamp{"2021/04/24 22:10:40.345678"};
+    string product{"BTC/USDT"};
+    string orderType{"bid"};
 
+    
     while(true){
 
         printMenu();
