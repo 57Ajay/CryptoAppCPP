@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 void printMenu(){
@@ -77,9 +78,10 @@ void processUserOption(int userOption){
 }
 int main (){
 
-    double price = 5319.450228;
-    double amount = 0.00020075;
-    
+    double price = 0.48;
+    double amount = 0.03123456;
+    string timestamp{"2021/04/24 22:10:40.345678"};
+
     while(true){
 
         printMenu();
