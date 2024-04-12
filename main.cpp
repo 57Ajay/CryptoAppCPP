@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 void printMenu(){
@@ -82,9 +83,29 @@ int main (){
     double amount = 0.03123456;
     string timestamp{"2021/04/24 22:10:40.345678"};
     string product{"BTC/USDT"};
-    string orderType{"bid"};
+    // string orderType{"anything"};
+    //This enum will make sure of order of only type 
+    //2 type: bid, ask;
 
-    
+    enum class OrderBookType{bid, ask};
+    OrderBookType orderType = OrderBookType::bid;
+
+    vector<double> prices;
+    vector<double> amounts;
+    vector<string> timestamps;
+    vector<string> products;
+    vector<OrderBookType> orderTypes;
+    prices.push_back(5000.01);
+    amounts.push_back(0.001);
+    timestamps.push_back("2021/04/24 22:10:40.345678");
+    products.push_back("BTC/USDT");
+    orderTypes.push_back(OrderBookType::bid);
+
+    cout<< "prices"<< prices[0]<< "\n";
+    cout<< "prices"<< prices[1]<< "\n";
+
+
+
     while(true){
 
         printMenu();
