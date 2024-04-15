@@ -125,7 +125,20 @@ int main (){
         if (userOption==0){
             break;
         };
+
     };
+
+    OrderBookEntry order1;
+        order1.price = 10000;
+        order1.amount = 0.002;
+        order1.timestamp = "2021/04/24 22:10:40.345678";
+        order1.product = "BTC/USDT";
+        order1.orderType = OrderBookType::bid;
+
+        cout<< "price: "<< order1.price<< "\n";
+        cout<< "amount: "<< order1.amount<< "\n";
+
+
 
     return 0;
 }
