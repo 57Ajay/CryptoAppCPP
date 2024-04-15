@@ -3,6 +3,17 @@
 #include <vector>
 using namespace std;
 
+enum class OrderBookType{bid, ask};
+
+class OrderBookEntry{
+    public:
+        double price;
+        double amount;
+        string timestamp;
+        string product;
+        OrderBookType orderType;
+};
+
 void printMenu(){
     cout<< "1: Print Help\n";
     cout << "2: Print Exchange Stats\n";
@@ -87,7 +98,7 @@ int main (){
     //This enum will make sure of order of only type 
     //2 type: bid, ask;
 
-    enum class OrderBookType{bid, ask};
+    
     OrderBookType orderType = OrderBookType::bid;
 
     vector<double> prices;
