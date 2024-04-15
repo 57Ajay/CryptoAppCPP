@@ -8,13 +8,15 @@ enum class OrderBookType{bid, ask};
 class OrderBookEntry{
     public:
 
-        OrderBookEntry(double price, double amount, string timestamp, string product, OrderBookType orderType) {
-            this->price = price;
-            this->amount = amount;
-            this->timestamp = timestamp;
-            this->product = product;
-            this->orderType = orderType;
-        
+        OrderBookEntry(double price, double amount, string timestamp, string product, OrderBookType orderType): price(price), amount(amount), timestamp(timestamp), product(product), orderType(orderType)  {
+            // alternate way to create constructors
+            //instead of using : after the parameters we
+            // write this-> code inside this curly braces
+            // this->price = price;
+            // this->amount = amount;
+            // this->timestamp = timestamp;
+            // this->product = product;
+            // this->orderType = orderType;
         }
         double price;
         double amount;
