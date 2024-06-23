@@ -1,3 +1,5 @@
+## project is in halt will come back and finish it later.
+
 # Crypto Command Line Application
 
 This is a simple command-line application written in C++ for performing basic cryptographic operations.
